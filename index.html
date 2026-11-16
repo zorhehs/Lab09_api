@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Space News Manager</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Space News Manager</h1>
+
+<div class="box">
+<h2>Search News</h2>
+<input type="text" id="search" value="nasa">
+<button onclick="loadNews()">GET: Load News</button>
+</div>
+
+<div class="box">
+<h2>Add / Edit Article</h2>
+<input type="text" id="title" placeholder="Title">
+<input type="text" id="text" placeholder="Description">
+<br>
+<button onclick="addArticle()">POST: Add Article</button>
+<button onclick="updateArticle()">PUT: Update Article</button>
+</div>
+
+<p id="message"></p>
+<div id="list"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
